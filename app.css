@@ -73,7 +73,7 @@ body {
 }
 
 .nav-links-container a {
-  color: rgb(255, 255, 255);
+  color: rgb(214, 214, 214);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
@@ -156,6 +156,7 @@ body {
 .services-cards {
   display: flex;
   justify-content: space-around;
+  height: 70vh;
 }
 
 .card {
@@ -165,7 +166,7 @@ body {
 .card p {
   text-align: justify;
   text-justify: auto;
-  height: 17rem;
+  height: 60%;
   line-height: 1.4rem;
   margin-bottom: 1.5rem;
 }
@@ -207,15 +208,325 @@ body {
   background-color: rgb(27, 34, 54);
   transition: background-color 0.2s ease;
 }
+
+.why-us {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+}
+
+.why-us h3 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 0.2rem;
+  margin-top: 2rem;
+}
+
+.why-us .underline {
+  height: 4px;
+  width: 3%;
+  background-color: rgb(48, 188, 238);
+  margin-bottom: 5rem;
+}
+
+.why-us-content-light {
+  background-color: rgb(255, 255, 255);
+}
+
+.why-us-content-dark,
+.why-us-content-light {
+  display: flex;
+  justify-content: space-around;
+  height: 60vh;
+  padding-bottom: 2rem;
+}
+
+.why-us-content-dark img,
+.why-us-content-light img {
+  width: 50%;
+}
+
+.why-us-content-dark .internal-why-us {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.why-us-content-light .internal-why-us {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.internal-why-us h3 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+}
+
+.internal-why-us p {
+  width: 90%;
+  text-align: justify;
+  text-justify: auto;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.internal-why-us .learn-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 10%;
+  border-radius: 30px;
+  border: 2px solid rgb(48, 188, 238);
+}
+
+.internal-why-us a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgb(48, 188, 238);
+}
+
+.why-us-content-quote {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60vh;
+  width: 100%;
+}
+
+.why-us-content-quote .quote-background {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.quote-overlay {
+  position: absolute;
+  top: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(45, 48, 65, 0.8);
+}
+
+.why-us-content-quote .thought-svg {
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  width: 6%;
+}
+
+.quote {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  width: 50%;
+}
+
+.quote h4 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+.quote p {
+  color: rgb(48, 188, 238);
+  margin-top: 1.5rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.technologies {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(238, 238, 238);
+  padding-bottom: 4rem;
+}
+
+.tech-images img {
+  width: 12rem;
+  height: 12rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.technologies h4 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+
+.technologies .underline {
+  height: 4px;
+  width: 20%;
+  background-color: rgb(48, 188, 238);
+  margin-bottom: 1rem;
+}
+
+.technologies .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-images {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.contact-us {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 110vh;
+  width: 100%;
+}
+
+.contact-us img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.contact-us .contact-overlay {
+  position: absolute;
+  top: 0%;
+  background-color: rgba(50, 56, 72, 0.8);
+  height: 100%;
+  width: 100%;
+}
+
+.contact-us h4 {
+  position: absolute;
+  top: 8%;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+}
+
+.contact-us .contact-heading {
+  position: absolute;
+  top: 18%;
+}
+
+.contact-heading p {
+  font-size: 2rem;
+  font-family: "Kanit", sans-serif;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+}
+
+.contact-heading .underline {
+  height: 4px;
+  width: 30%;
+  margin: 0% auto;
+  background-color: rgb(48, 188, 238);
+}
+
+.contact-us form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 35%;
+  width: 40%;
+}
+
+.form {
+  display: flex;
+  justify-content: space-around;
+}
+
+#name,
+#mail,
+#msg {
+  background-color: rgba(78, 84, 98, 0.7);
+  border: none;
+  height: 3rem;
+  margin: 0.5rem;
+  border-radius: 10px;
+  outline: none;
+}
+
+#name,
+#mail,
+#msg,
+::placeholder {
+  font-family: "Kanit", sans-serif;
+  color: white;
+  font-size: 0.8rem;
+  padding-left: 0.5rem;
+}
+
+.form input[type="submit"] {
+  font-family: "Kanit", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  cursor: pointer;
+  color: rgb(48, 188, 238);
+  width: 25%;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: 2px solid rgb(48, 188, 238);
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.contact-footbar {
+  position: absolute;
+  height: 12vh;
+  bottom: 0%;
+  width: 100%;
+  background-color: rgba(20, 27, 46, 0.8);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3rem;
+}
+
+.contact-footbar p {
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+}
+
+.contact-footbar .icons {
+  width: 20%;
+  padding-right: 3rem;
+}
+
 /* Hover effects */
 
 .logo a:hover {
-  color: rgb(0, 104, 202);
+  color: rgb(48, 188, 238);
   transition: color 0.2s ease-in;
 }
 
 .nav-link a:hover {
-  color: rgb(72, 204, 32);
+  color: rgb(255, 255, 255);
   transition: color 0.2s ease-in;
 }
 
