@@ -1,0 +1,275 @@
+/* Normal/Basic css stylings */
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+svg {
+  display: inline;
+}
+
+body {
+  /* font-family: "Kanit", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-container {
+  position: relative;
+  height: 70vh;
+  width: 100%;
+}
+
+.header-image {
+  position: relative;
+  z-index: -2;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.overlay {
+  position: absolute;
+  z-index: -1;
+  background-color: rgba(35, 43, 61, 0.8);
+  width: 100%;
+  height: 100%;
+  top: 0%;
+}
+
+.navbar-container {
+  position: fixed;
+  font-family: "Kanit", sans-serif;
+  width: 100%;
+  height: 13vh;
+  top: 0%;
+  z-index: 5;
+  display: flex;
+  justify-content: space-around;
+  /* padding: 0rem 1rem; */
+  align-items: center;
+  min-height: 10vh;
+  background-color: rgba(27, 34, 54, 0.5);
+  transition: background-color 0.2s ease;
+}
+
+.logo a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.nav-links-container {
+  display: flex;
+  width: 45%;
+  justify-content: space-around;
+}
+
+.nav-links-container li {
+  list-style: none;
+}
+
+.nav-links-container a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.97rem;
+  letter-spacing: 0.18rem;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.4s ease;
+}
+
+.cross .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.cross .line2 {
+  opacity: 0%;
+}
+
+.cross .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 40%;
+}
+
+.header-text h1 {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  letter-spacing: 0.25rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.header-text h3 {
+  width: 80%;
+  font-weight: normal;
+  font-size: 1.12rem;
+  line-height: 1.6rem;
+  text-align: justify;
+  text-justify: auto;
+  color: rgb(221, 219, 219);
+}
+.services {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.services h3 {
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding-bottom: 0.2rem;
+}
+
+.services .underline {
+  height: 4px;
+  width: 5%;
+  background-color: rgb(48, 188, 238);
+  margin-bottom: 4rem;
+}
+
+.services-cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 25%;
+}
+
+.card p {
+  text-align: justify;
+  text-justify: auto;
+  height: 17rem;
+  line-height: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.card a {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: white;
+  font-size: 0.85rem;
+}
+
+.card .learn-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(19, 151, 199);
+  width: 40%;
+  height: 10%;
+  border-radius: 20px;
+}
+
+.card-heading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  height: 4rem;
+}
+
+.card-heading span {
+  width: auto;
+  margin-left: 1.5rem;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.7rem;
+  text-transform: capitalize;
+  color: rgb(19, 151, 199);
+}
+
+.nav-scrolled {
+  background-color: rgb(27, 34, 54);
+  transition: background-color 0.2s ease;
+}
+/* Hover effects */
+
+.logo a:hover {
+  color: rgb(0, 104, 202);
+  transition: color 0.2s ease-in;
+}
+
+.nav-link a:hover {
+  color: rgb(72, 204, 32);
+  transition: color 0.2s ease-in;
+}
+
+/* Responsive navbar code for small devices */
+
+@media only screen and (max-width: 1024px) {
+  .nav-links-container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links-container {
+    position: absolute;
+    right: 0%;
+    top: 13vh;
+    height: 87vh;
+    background-color: rgba(27, 34, 54, 0.99);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .nav-link {
+    opacity: 0%;
+  }
+
+  .burger {
+    display: block;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+/* Animation keyframes */
+
+@keyframes navLinksFade {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.class {
+  color: aliceblue;
+}
