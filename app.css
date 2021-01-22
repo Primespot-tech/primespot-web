@@ -280,16 +280,6 @@ body {
   line-height: 1.8rem;
 }
 
-.internal-why-us .learn-more {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20%;
-  height: 10%;
-  border-radius: 30px;
-  border: 2px solid rgb(48, 188, 238);
-}
-
 .internal-why-us a {
   text-decoration: none;
   text-transform: capitalize;
@@ -563,6 +553,135 @@ body {
 
   .burger {
     display: block;
+  }
+
+  .header-text {
+    top: 25%;
+  }
+
+  .header-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .header-text h3 {
+    font-size: 0.9rem;
+  }
+
+  .grid-alignment {
+    display: grid;
+  }
+
+  .services {
+    width: 100vw;
+    height: 100rem;
+  }
+
+  .services-cards {
+    display: grid;
+  }
+
+  .services-cards .card {
+    width: 80%;
+    margin: 0% auto;
+    margin-bottom: 6rem;
+  }
+
+  .card-heading img {
+    margin-left: auto;
+  }
+
+  .card-heading span {
+    margin-right: auto;
+  }
+
+  .card p {
+    margin-bottom: 2.5rem;
+  }
+
+  .why-us {
+    width: 100vw;
+  }
+
+  .why-us .underline {
+    margin-bottom: 1.5rem;
+  }
+
+  .why-us-content-dark img,
+  .why-us-content-light img {
+    display: none;
+  }
+
+  .internal-why-us {
+    width: 90%;
+  }
+
+  .internal-why-us h3 {
+    font-size: 2rem;
+    margin: 0% auto;
+  }
+
+  .internal-why-us p {
+    font-size: 1rem;
+    margin: 0% auto;
+  }
+
+  .why-us-content-quote {
+    height: 70vh;
+  }
+
+  .why-us-content-quote .quote {
+    top: 25%;
+  }
+
+  .why-us-content-quote .thought-svg {
+    width: 10%;
+  }
+
+  .why-us-content-quote h4 {
+    font-size: 2rem;
+  }
+
+  .quote p {
+    font-size: 0.9rem;
+  }
+
+  .technologies {
+    width: 100vw;
+    height: 180vh;
+  }
+
+  .tech-images {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-self: space-around;
+  }
+
+  .contact-us {
+    width: 100vw;
+  }
+
+  .contact-us h4 {
+    font-size: 1.3rem;
+  }
+
+  .contact-heading p {
+    font-size: 1.5rem;
+  }
+
+  .form form {
+    width: 80%;
+  }
+
+  .contact-footbar p {
+    width: 40%;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .contact-footbar .icons {
+    width: 50%;
   }
 }
 
