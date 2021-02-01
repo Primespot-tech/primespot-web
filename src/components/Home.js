@@ -184,6 +184,7 @@ function Home() {
             <img src={affordable} alt="Affordable prize" />
             <div className="internal-why-us">
               <h3>Affordable Prize</h3>
+
               <p>
                 We make your online price at an affordable price which is an
                 nominal price compared to others. We are a team of passionates
