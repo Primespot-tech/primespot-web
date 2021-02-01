@@ -10,7 +10,6 @@ svg {
 }
 
 body {
-  /* font-family: "Kanit", sans-serif; */
   font-family: "Montserrat", sans-serif;
 }
 
@@ -49,25 +48,20 @@ body {
   justify-content: space-around;
   align-items: center;
   min-height: 10vh;
-  background-color: rgba(27, 34, 54, 0.5);
+  background-color: rgba(100, 109, 131, 0.5);
   transition: background-color 0.2s ease;
 }
 
 .logo a {
   color: rgb(255, 255, 255);
   text-decoration: none;
-  font-size: 2rem;
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
+}
+.logo img {
+  height: 100px;
+  width: 230px;
 }
 
-/*.nav-options {
-  padding-left: 25px;
-  display: grid;
-  grid-template-columns: repeat(3, auto);
-  grid-gap: 50px;
-  list-style-type: none;
-}*/
 .nav-options li {
   list-style: none;
 }
@@ -174,6 +168,7 @@ body {
   flex-direction: column;
   align-items: center;
   margin-top: 5rem;
+  height: 60vh;
 }
 
 .services h3 {
@@ -194,7 +189,8 @@ body {
 .services-cards {
   display: flex;
   justify-content: space-around;
-  height: 70vh;
+  height: 40vh;
+  position: relative;
 }
 
 .card {
@@ -225,6 +221,11 @@ body {
   height: 10%;
   border-radius: 20px;
 }
+.learn-more {
+  padding: 20px;
+  margin: 10px;
+  margin-left: 0px;
+}
 
 .card-heading {
   display: flex;
@@ -249,6 +250,7 @@ body {
 
 .why-us {
   margin-top: 5rem;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -260,7 +262,7 @@ body {
   font-weight: 500;
   font-size: 2rem;
   text-transform: uppercase;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.1rem;
   margin-top: 2rem;
 }
 
@@ -268,7 +270,6 @@ body {
   height: 4px;
   width: 3%;
   background-color: rgb(48, 188, 238);
-  margin-bottom: 5rem;
 }
 
 .why-us-content-light {
@@ -279,20 +280,21 @@ body {
 .why-us-content-light {
   display: flex;
   justify-content: space-around;
-  height: 60vh;
-  padding-bottom: 2rem;
+  height: 50vh;
+  padding-top: 10px;
 }
 
 .why-us-content-dark img,
 .why-us-content-light img {
   width: 50%;
+  padding: 0 20px;
 }
 
 .why-us-content-dark .internal-why-us {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
 }
 
@@ -300,7 +302,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-end;
 }
 
@@ -559,7 +561,7 @@ body {
   height: 12vh;
   bottom: 0%;
   width: 100%;
-  background-color: rgba(20, 27, 46, 0.8);
+  background-color: rgb(27, 34, 54);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -572,10 +574,20 @@ body {
 }
 
 .contact-footbar .icons {
-  width: 20%;
-  padding-right: 3rem;
+  display: flex;
+}
+.icons {
+  width: 40%;
+  justify-content: space-around;
 }
 
+.icons > a {
+  text-decoration: none;
+  color: white;
+}
+.icons > a:hover {
+  color: green;
+}
 /* Hover effects */
 
 .logo a:hover {

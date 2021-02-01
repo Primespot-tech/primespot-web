@@ -1,0 +1,48 @@
+.services-div {
+  min-height: 50vh;
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 5vh;
+}
+
+.services-menu {
+  width: 20%;
+  margin-right: 30px;
+
+  padding: 0px 15px;
+}
+
+.services-main {
+  width: 80%;
+  text-align: justify;
+  text-justify: auto;
+}
+
+.services-menu > ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0px;
+  font-size: 1.2rem;
+}
+
+.services-menu .menu-links {
+  text-decoration: none;
+  justify-content: left;
+  color: unset;
+  line-height: 40px;
+  font-size: 14px;
+}
+
+.services-menu ul li {
+  text-align: left;
+  padding: 5px;
+  border-bottom: 1px solid #eee;
+}
+.services-menu ul li:hover {
+  background-color: #67b528;
+}
+.services-menu ul li:active {
+  background-color: #67b528;
+}
