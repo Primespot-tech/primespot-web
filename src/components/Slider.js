@@ -26,10 +26,9 @@ export default class Sliders extends Component {
           <div className="slider-cards" style={{ width: "100px" }}>
             <div className="profile-card">
               <div className="Profile-card-p">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Asperiores, nobis deserunt obcaecati quo sequi nam placeat optio
-                iste dolorem aspernatur! Explicabo suscipit, quibusdam soluta
-                libero non a blanditiis quod nisi.
+                An experienced full stack webdeveloper good in MERN stack
+                development and linux server administrator, Working as a
+                freelance web developer for few years.
               </div>
               <div className="profile-card-img">
                 <img
@@ -54,10 +53,8 @@ export default class Sliders extends Component {
           <div className="slider-cards" style={{ width: "50px" }}>
             <div className="profile-card">
               <div className="Profile-card-p">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Asperiores, nobis deserunt obcaecati quo sequi nam placeat optio
-                iste dolorem aspernatur! Explicabo suscipit, quibusdam soluta
-                libero non a blanditiis quod nisi.
+                UI/UX designer familiar with new thechnologies to innovate front
+                end design of web and mobile responsive applications.
               </div>
               <div className="profile-card-img">
                 <img
@@ -80,10 +77,9 @@ export default class Sliders extends Component {
           <div className="slider-cards" style={{ width: "50px" }}>
             <div className="profile-card">
               <div className="Profile-card-p">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Asperiores, nobis deserunt obcaecati quo sequi nam placeat optio
-                iste dolorem aspernatur! Explicabo suscipit, quibusdam soluta
-                libero non a blanditiis quod nisi.
+                An wordpress developer & content writter, handling all type of
+                plugins to make wordpress site feature rich, good in search
+                engine optimization and content writing.
               </div>
               <div className="profile-card-img">
                 <img

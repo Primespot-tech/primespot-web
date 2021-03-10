@@ -233,7 +233,7 @@ function Home() {
           <div className="why-us-content-dark">
             <img src={affordable} alt="Affordable prize" />
             <div className="internal-why-us">
-              <h3>Affordable Prize</h3>
+              <h3>Affordable Price</h3>
 
               <p>
                 We make your online price at an affordable price which is an
@@ -246,10 +246,10 @@ function Home() {
             <div className="internal-why-us">
               <h3>Responsive design</h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Asperiores, nobis deserunt obcaecati quo sequi nam placeat optio
-                iste dolorem aspernatur! Explicabo suscipit, quibusdam soluta
-                libero non a blanditiis quod nisi.
+                website we design always best suite for mobile , tablet and
+                desktop view. Pay for one interface and get your website
+                completely responsive for all type of devices with personalized
+                interface.
               </p>
             </div>
             <img src={Responsive} alt="Responsive Design" />
