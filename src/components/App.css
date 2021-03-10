@@ -13,9 +13,11 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+/*---------------------header-----------------------*/
+
 .header-container {
   position: relative;
-  height: 70vh;
+  height: 90vh;
   width: 100%;
 }
 
@@ -41,7 +43,7 @@ body {
   position: fixed;
   font-family: "Kanit", sans-serif;
   width: 100%;
-  height: 13vh;
+  height: 14vh;
   top: 0%;
   z-index: 5;
   display: flex;
@@ -51,6 +53,11 @@ body {
   background-color: rgba(100, 109, 131, 0.5);
   transition: background-color 0.2s ease;
 }
+.nav-scrolled {
+  background-color: rgb(27, 34, 54) !important;
+  transition: background-color 0.2s ease !important;
+  height: 14vh !important;
+}
 
 .logo a {
   color: rgb(255, 255, 255);
@@ -58,8 +65,8 @@ body {
   text-transform: uppercase;
 }
 .logo img {
-  height: 100px;
-  width: 230px;
+  height: 80px;
+  width: 300px;
 }
 
 .nav-options li {
@@ -163,16 +170,21 @@ body {
   text-justify: auto;
   color: rgb(221, 219, 219);
 }
+
+/*-----------------------services---------------------*/
+
 .services {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 5rem;
+  margin-top: 1rem;
   height: 60vh;
+  position: relative;
 }
 
 .services h3 {
   font-family: "Kanit", sans-serif;
+  position: relative;
   font-weight: 500;
   font-size: 2rem;
   text-transform: uppercase;
@@ -183,7 +195,7 @@ body {
   height: 4px;
   width: 5%;
   background-color: rgb(48, 188, 238);
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
 }
 
 .services-cards {
@@ -195,14 +207,15 @@ body {
 
 .card {
   width: 25%;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
 }
 
 .card p {
   text-align: justify;
   text-justify: auto;
-  height: 60%;
-  line-height: 1.4rem;
-  margin-bottom: 1.5rem;
+  line-height: 1.2rem;
 }
 
 .card a {
@@ -217,13 +230,10 @@ body {
   justify-content: center;
   align-items: center;
   background-color: rgb(19, 151, 199);
-  width: 40%;
-  height: 10%;
+  width: 35%;
+  height: 40px;
   border-radius: 20px;
-}
-.learn-more {
-  padding: 20px;
-  margin: 10px;
+  padding: 0px 20px;
   margin-left: 0px;
 }
 
@@ -243,13 +253,9 @@ body {
   color: rgb(19, 151, 199);
 }
 
-.nav-scrolled {
-  background-color: rgb(27, 34, 54) !important;
-  transition: background-color 0.2s ease !important;
-}
+/*--------------------------whyus-----------------------*/
 
 .why-us {
-  margin-top: 5rem;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -262,7 +268,6 @@ body {
   font-weight: 500;
   font-size: 2rem;
   text-transform: uppercase;
-  padding-bottom: 0.1rem;
   margin-top: 2rem;
 }
 
@@ -279,23 +284,25 @@ body {
 .why-us-content-dark,
 .why-us-content-light {
   display: flex;
-  justify-content: space-around;
-  height: 50vh;
-  padding-top: 10px;
+  justify-content: start;
+  height: 60vh;
 }
 
 .why-us-content-dark img,
 .why-us-content-light img {
+  height: 50vh;
+  padding: 0px;
+  margin-top: 10vh;
   width: 50%;
-  padding: 0 20px;
 }
 
-.why-us-content-dark .internal-why-us {
+.internal-why-us {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+  width: 50%;
 }
 
 .why-us-content-light .internal-why-us {
@@ -316,7 +323,7 @@ body {
   width: 90%;
   text-align: justify;
   text-justify: auto;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 1.8rem;
 }
 
@@ -488,6 +495,11 @@ body {
   align-items: center;
 }
 
+.contact-div {
+  display: flex;
+  width: 80%;
+}
+
 .contact-us .contact-heading {
   position: absolute;
   top: 18%;
@@ -512,7 +524,39 @@ body {
   flex-direction: column;
   position: absolute;
   top: 35%;
+  left: 5%;
   width: 40%;
+}
+.sliders-mobile {
+  display: none;
+}
+.sliders {
+  width: 40vw !important;
+  height: 50%;
+  position: absolute;
+  top: 35%;
+  background-color: #2c2a39;
+  right: 5%;
+}
+
+.profile-card {
+  padding: 5% 10%;
+  color: white;
+  justify-content: center;
+}
+.Profile-card-p {
+  padding-bottom: 5px;
+}
+.Profile-card-img {
+  justify-content: center;
+  margin: auto;
+}
+.profile-img {
+  height: 100px !important;
+  width: 100px !important;
+}
+.profile-card-desig {
+  text-align: center;
 }
 
 .form {
@@ -588,6 +632,15 @@ body {
 .icons > a:hover {
   color: green;
 }
+.contact-content {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+.contact-content > form {
+  width: 40%;
+}
+
 /* Hover effects */
 
 .logo a:hover {
@@ -653,7 +706,7 @@ body {
 
   .services {
     width: 100vw;
-    height: 100rem;
+    height: 75rem;
   }
 
   .services-cards {
@@ -727,18 +780,69 @@ body {
 
   .technologies {
     width: 100vw;
-    height: 180vh;
+    height: 50vh;
+  }
+  .tech-images > img {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 100%;
   }
 
   .tech-images {
     display: flex;
-    height: 100%;
-    flex-direction: column;
+    height: 40%;
+    flex-direction: row;
     align-items: center;
     justify-self: space-around;
   }
+  .contact-div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  .sliders {
+    width: 40vw !important;
+    min-height: 100% !important;
+    background-color: #2c2a39;
+    position: relative;
+    top: 0%;
+  }
+
+  .profile-card {
+    padding: 5% 10%;
+    color: white;
+    justify-content: center;
+  }
+  .Profile-card-p {
+    padding-bottom: 5px;
+  }
+  .Profile-card-img {
+    justify-content: center;
+    margin: auto;
+  }
+  .profile-card-desig {
+    text-align: center;
+  }
+  .contact-div-web {
+    display: none;
+  }
+  .sliders-mobile {
+    display: inherit;
+  }
+
+  .sliders {
+    width: 70vw !important;
+    margin-bottom: 10px;
+    margin-right: 50px;
+  }
+
+  .telegram {
+    display: none;
+  }
 
   .contact-us {
+    margin-top: 30px;
     width: 100vw;
   }
 
@@ -752,6 +856,9 @@ body {
 
   .form form {
     width: 80%;
+  }
+  .contact-footbar {
+    padding-right: 15px;
   }
 
   .contact-footbar p {

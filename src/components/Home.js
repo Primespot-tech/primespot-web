@@ -1,25 +1,22 @@
 import React, { useState } from "react";
-import { Link, Route, Switch } from "react-router-dom";
+import { Link } from "react-router-dom";
+import Sliders from "./Slider";
 
-import Main from "./Main";
-import Services from "./Services";
 import "./App.css";
 import Steppercomp from "./Steppercomp";
 import Contactus from "../imgs/Contactus.png";
 import Banner from "../imgs/TopImage.jpg";
-import graphicdesign from "../imgs/graphic_designing.svg";
-import webdev from "../imgs/web_dev.svg";
-import digitalmarketting from "../imgs/digital_marketing.svg";
 import InnovativeTeam from "../imgs/InnovativeTeam.svg";
 import Easybusiness from "../imgs/Easybusiness.svg";
 import affordable from "../imgs/affordable.svg";
 import Responsive from "../imgs/Responsive.svg";
 import quote from "../imgs/quote.svg";
 import Quote from "../imgs/Quote.png";
-import fbimg from "../imgs/fb.svg";
-import instaimg from "../imgs/insta.svg";
-import whatsappimg from "../imgs/whatsapp.svg";
-import twitterimg from "../imgs/twitter.svg";
+
+import graphicdesign from "../imgs/graphic_designing.svg";
+import webdev from "../imgs/web_dev.svg";
+import digitalmarketting from "../imgs/digital_marketing.svg";
+
 import Logo from "../imgs/Logo.png";
 import Materialui from "../imgs/MaterialUi.jpg";
 import Mongodb from "../imgs/MongoDb.jpg";
@@ -43,7 +40,7 @@ const navs = {
     position: "fixed",
     fontFamily: "Kanit, sans-serif",
     width: "100%",
-    height: "13vh",
+    height: "20vh",
     top: "0%",
     zIndex: 5,
     display: "flex",
@@ -96,10 +93,12 @@ function Home() {
         })
       }
 
+      {/*---------------------------------header-----------------------*/}
+
       <header className="header-container">
         <img className="header-image" src={Banner} alt="Primespot Banner" />
-
         <div className="overlay"></div>
+
         <nav style={navs.navbarcontainer} className={navScrollEffect}>
           <div className="logo">
             <a href="/">
@@ -114,7 +113,7 @@ function Home() {
               <a href="#whyus">why us ?</a>
             </li>
             <li className="option" onClick={closeMobileMenu}>
-              <a href="#services">services</a>
+              <a href="/services">services</a>
             </li>
             <li className="option" onClick={closeMobileMenu}>
               <a href="/">projects</a>
@@ -147,10 +146,61 @@ function Home() {
       </header>
 
       <div className="grid-alignment">
-        <Switch>
-          <Route path="/services" component={Services}></Route>
-          <Route path="/" component={Main}></Route>
-        </Switch>
+        {/*-----------------------services------------------------------*/}
+
+        <section id="#services" className="services">
+          <h3>our services</h3>
+          <div className="underline"></div>
+          <div className="services-cards">
+            <div className="card">
+              <div className="card-heading">
+                <img src={webdev} alt="Web Development" />
+                <span>web development</span>
+              </div>
+              <p>
+                Our developers will design an attractive and user friendly
+                websites for you and that will surely liked by the customers or
+                clients who are using it. This is the most important one that
+                every website owner needs. "We make it for you". We designs all
+                type of websites in your preferred mode.
+              </p>
+              {/* <div className="learn-more">
+                <Link to="/services/digitalmarketting">learn more</Link>
+            </div>*/}
+            </div>
+            <div className="card">
+              <div className="card-heading">
+                <img src={graphicdesign} alt="Graphic designing " />
+                <span>graphic designing</span>
+              </div>
+              <p>
+                As face is the index of our mind, Logo's are the index of your
+                business. That will be like adding creativity to your Triumph.
+                Our designers will design an creative and beautiful Logo's,
+                Brouchers and Posters as you need for your business.
+              </p>
+              {/* <div className="learn-more">
+                <Link to="/services/digitalmarketting">learn more</Link>
+            </div>*/}
+            </div>
+            <div className="card">
+              <div className="card-heading">
+                <img src={digitalmarketting} alt="Digital marketing" />
+                <span>digital marketing</span>
+              </div>
+              <p>
+                For every business, there should be an marketing team to promote
+                it. We do it for you on online. We promote your business in all
+                the ways that make it engaging to all the people across the
+                world through online.
+              </p>
+              {/* <div className="learn-more">
+                <Link to="/services/digitalmarketting">learn more</Link>
+            </div>*/}
+            </div>
+          </div>
+        </section>
+
         {/*------------------------why us--------------------------------*/}
 
         <section id="whyus" className="why-us">
@@ -215,6 +265,8 @@ function Home() {
           </div>
         </section>
 
+        {/*---------------------------------technology-we-use--------------------*/}
+
         <section className="technologies">
           <div className="title">
             <h4>technologies we use</h4>
@@ -227,13 +279,20 @@ function Home() {
             <img src={Reactimg} alt="React" />
           </div>
         </section>
-        {/*---------------------------------contact us ---------------*/}
+
+        {/*---------------------------------contact us ----------------------*/}
+
         <section id="contactus" className="stepper">
           <div className="title">
             <h4>Get your business to next level in 3 steps..</h4>
             <div className="underline"></div>
           </div>
-          <Steppercomp className="steppercomp" />
+          <div className="contact-div">
+            <Steppercomp className="steppercomp" />
+            <div className="sliders-mobile">
+              <Sliders />
+            </div>
+          </div>
         </section>
 
         <section className="contact-us">
@@ -244,6 +303,9 @@ function Home() {
             <p>contact us</p>
             <div className="underline"></div>
           </div>
+          <div className="contact-div-web">
+            <Sliders />
+          </div>
           <div className="form">
             <form action="#">
               <input type="text" id="name" placeholder="Your Name" />
@@ -252,6 +314,7 @@ function Home() {
               <input type="submit" value="Send Message" />
             </form>
           </div>
+
           <div className="contact-footbar">
             <p>Copyrights&#169; primespot-All rights reserved</p>
             <div className="icons">
@@ -270,7 +333,7 @@ function Home() {
               <a href="">
                 <WhatsAppIcon fontSize="large" />
               </a>
-              <a href="">
+              <a className="telegram" href="">
                 <TelegramIcon fontSize="large" />
               </a>
             </div>

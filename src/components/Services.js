@@ -1,6 +1,7 @@
 import React from "react";
-import { Link, Switch, Route } from "react-router-dom";
-
+import { NavLink, Link, Switch, Route } from "react-router-dom";
+import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+import { Typography } from "@material-ui/core";
 import "./services.css";
 
 function Webdev() {
@@ -98,31 +99,73 @@ function Wordpress() {
     </div>
   );
 }
-
+function handleClick(event) {
+  event.preventDefault();
+  console.info("You clicked a breadcrumb.");
+}
 function Services() {
   return (
     <div>
+      <div className="breadcrumbs">
+        <Breadcrumbs aria-label="breadcrumb">
+          <Link color="inherit" href="/" onClick={handleClick}>
+            Material-UI
+          </Link>
+          <Link
+            color="inherit"
+            href="/getting-started/installation/"
+            onClick={handleClick}
+          >
+            Core
+          </Link>
+          <Typography color="textPrimary">Breadcrumb</Typography>
+        </Breadcrumbs>
+      </div>
       <div className="services-div">
         <div className="services-menu">
           <ul>
-            <Link className="menu-links" to="/services/webhost">
+            <NavLink
+              activeClassName="menu-links--active"
+              className="menu-links"
+              to="/services/webhost"
+            >
               <li>web Hosting</li>
-            </Link>
-            <Link className="menu-links" to="/services/graphicdesign">
+            </NavLink>
+            <NavLink
+              activeClassName="menu-links--active"
+              className="menu-links"
+              to="/services/graphicdesign"
+            >
               <li>Graphic designing</li>
-            </Link>
-            <Link className="menu-links" to="/services/seo">
+            </NavLink>
+            <NavLink
+              activeClassName="menu-links--active"
+              className="menu-links"
+              to="/services/seo"
+            >
               <li>SEO/SMO/SEM</li>
-            </Link>
-            <Link className="menu-links" to="/services/digitalmarketting">
+            </NavLink>
+            <NavLink
+              activeClassName="menu-links--active"
+              className="menu-links"
+              to="/services/digitalmarketting"
+            >
               <li>digital Marketting</li>
-            </Link>
-            <Link className="menu-links" to="/services/wordpress">
+            </NavLink>
+            <NavLink
+              activeClassName="menu-links--active"
+              className="menu-links"
+              to="/services/wordpress"
+            >
               <li>Wordpress Sites</li>
-            </Link>
-            <Link className="menu-links" to="/services/webdev">
+            </NavLink>
+            <NavLink
+              activeClassName="menu-links--active"
+              className="menu-links"
+              to="/services/webdev"
+            >
               <li>web develoment</li>
-            </Link>
+            </NavLink>
           </ul>
         </div>
         <div className="services-main">

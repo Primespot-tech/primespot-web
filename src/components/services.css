@@ -30,7 +30,6 @@
 .services-menu .menu-links {
   text-decoration: none;
   justify-content: left;
-  color: unset;
   line-height: 40px;
   font-size: 14px;
 }
@@ -40,9 +39,13 @@
   padding: 5px;
   border-bottom: 1px solid #eee;
 }
-.services-menu ul li:hover {
-  background-color: #67b528;
+.menu-links {
+  background-color: white;
 }
-.services-menu ul li:active {
-  background-color: #67b528;
+.menu-links--active {
+  background-color: greenyellow;
+}
+.breadcrumbs {
+  display: flex;
+  width: 100%;
 }
